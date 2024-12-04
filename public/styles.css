@@ -1,0 +1,85 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: url('/public/school_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+  width: 350px;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.app::-webkit-scrollbar {
+  width: 5px;
+}
+
+.app::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h4, footer p {
+  margin: 0;
+  color: #333;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addNew:hover {
+  background-color: #218838;
+}
+
+#tasks div {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+#tasks div:hover {
+  background-color: #e9ecef;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.options i {
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.options i:hover {
+  color: #0056b3;
+}
